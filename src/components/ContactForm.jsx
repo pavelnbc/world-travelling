@@ -54,7 +54,7 @@ class ContactForm extends Component {
                         <input type="text" placeholder="Name"/>
                         <input type="text" placeholder="Email"/>
                         <input type="text" placeholder="Topic"/>
-                        <textarea cols="30" rows="10" placeholder="Description"></textarea>
+                        <textarea cols="21" rows="10" placeholder="Description"></textarea>
                         <button disabled>Send</button>
                     </form>
                 </div>
