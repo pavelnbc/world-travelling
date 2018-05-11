@@ -221,9 +221,10 @@ h1 {
   width: 65%;
   margin: 0 auto 60px;
   padding: 0 30px 30px;
+  font: 22px Garamond bold;
   border: 2px solid #2f2e2e;
   border-radius: 10px;
-  font: 22px Garamond bold;
+  background: url('/img/transparent-layer.png');
 }
 
 @media only screen and (max-width: 767px) {
@@ -308,7 +309,7 @@ h1 {
   padding-bottom: 40px;
   border: 2px solid;
   border-radius: 10px;
-  background-color: #cfd6e8;
+  background: url('/img/transparent-layer.png');
 }
 
 .advantages__list {
@@ -335,11 +336,13 @@ h1 {
   list-style: none;
   border: 2px solid;
   border-radius: 10px;
+  font: bold 18px "Bell MT";
 }
 
 @media screen and (max-width: 767px) {
   .advantages__list li {
     width: 100px;
+    font-size: 15px;
   }
 
   .advantages__list img {
