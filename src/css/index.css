@@ -224,7 +224,7 @@ h1 {
   font: 22px Garamond bold;
   border: 2px solid #2f2e2e;
   border-radius: 10px;
-  background: url('/img/transparent-layer.png');
+  background-color: rgba(255, 2555, 255, 0.33);
 }
 
 @media only screen and (max-width: 767px) {
@@ -309,8 +309,7 @@ h1 {
   padding-bottom: 40px;
   border: 2px solid;
   border-radius: 10px;
-  background: url('/img/transparent-layer.png');
-}
+  background-color: rgba(255, 2555, 255, 0.33);}
 
 .advantages__list {
   display: flex;
