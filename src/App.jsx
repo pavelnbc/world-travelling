@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 import classNames from 'classnames';
 
 import Content from './components/Content';
@@ -8,6 +9,7 @@ import AboutUs from './components/AboutUs';
 import Directions from './components/Directions';
 import Advantages from './components/Advantages';
 import ContactForm from './components/ContactForm';
+import Countries from './components/Countries';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -66,6 +68,7 @@ class App extends Component {
                     <Directions/>
                     <Advantages/>
                     <ContactForm/>
+                    <Route path="/countries" component={Countries}/>
                 </Content>
                 <Footer/>
             </main>
