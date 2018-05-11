@@ -69,8 +69,8 @@ class App extends Component {
                     <Advantages/>
                     <ContactForm/>
                     <Route path="/countries" component={Countries}/>
+                    <Footer/>
                 </Content>
-                <Footer/>
             </main>
         )
     }
