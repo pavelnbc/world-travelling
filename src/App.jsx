@@ -4,6 +4,7 @@ import classNames from 'classnames';
 import Content from './components/Content';
 import Header from './components/Header';
 import MainBanner from './components/MainBanner';
+import AboutUs from './components/AboutUs';
 import Directions from './components/Directions';
 import Advantages from './components/Advantages';
 import ContactForm from './components/ContactForm';
@@ -61,6 +62,7 @@ class App extends Component {
                 <Content>
                     <Header/>
                     <MainBanner/>
+                    <AboutUs/>
                     <Directions/>
                     <Advantages/>
                     <ContactForm/>

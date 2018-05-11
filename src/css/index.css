@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url('/img/contact-background.jpg');
+  background: fixed url('/img/contact-background.jpg');
   background-size: 300px;
 }
 
@@ -210,6 +210,24 @@ h1 {
 @media only screen and (max-width: 767px) {
   .banner__title {
     font-size: 35px;
+  }
+}
+
+/*About-section*/
+
+.about-section {
+  width: 65%;
+  margin: 0 auto 60px;
+  padding: 30px;
+  border: 2px solid #2f2e2e;
+  border-radius: 10px;
+  font: 22px Garamond bold;
+}
+
+@media only screen and (max-width: 767px) {
+  .about-section {
+    width: 80%;
+    font: 14px Garamond bold;
   }
 }
 
