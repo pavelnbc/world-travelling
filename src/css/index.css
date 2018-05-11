@@ -122,6 +122,8 @@ h1 {
   width: 200px;
   height: 199px;
   border: 1px solid grey;
+  border-radius: 5px;
+  overflow: hidden;
   transition: 0.2s;
   z-index: 102;
 }
@@ -218,7 +220,7 @@ h1 {
 .about-section {
   width: 65%;
   margin: 0 auto 60px;
-  padding: 30px;
+  padding: 0 30px 30px;
   border: 2px solid #2f2e2e;
   border-radius: 10px;
   font: 22px Garamond bold;
@@ -303,7 +305,6 @@ h1 {
 .advantages {
   width: 85%;
   margin: 120px auto 100px;
-  padding-top: 15px;
   padding-bottom: 40px;
   border: 2px solid;
   border-radius: 10px;
@@ -351,7 +352,7 @@ h1 {
 .contact-form {
   width: 700px;
   margin: 0 auto 100px;
-  padding: 40px;
+  padding: 25px;
   background-color: #baceec;
   border-radius: 5px;
 }
