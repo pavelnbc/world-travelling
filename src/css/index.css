@@ -270,6 +270,10 @@ h1 {
 }
 
 .direction {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -277,6 +281,8 @@ h1 {
   right: 0;
   background-color: rgba(251, 222, 222, 0.65);
   cursor: pointer;
+  font: 40px Georgia;
+  color: royalblue;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -286,12 +292,8 @@ h1 {
 }
 
 .directions .city {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: 40px Georgia;
-  color: royalblue;
+
+
 }
 
 @media only screen and (max-width: 767px) {
