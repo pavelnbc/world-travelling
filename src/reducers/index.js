@@ -1,8 +1,10 @@
 import mobileMenuReducer from './mobileMenuReduser';
+import countriesReducer from './countriesReducer';
 import { combineReducers } from 'redux';
 
 export default combineReducers({
-    isMobileMenuOpened: mobileMenuReducer
+    isMobileMenuOpened: mobileMenuReducer,
+    countries: countriesReducer
 })
 
 

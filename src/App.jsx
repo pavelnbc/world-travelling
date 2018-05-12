@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import classNames from 'classnames';
 
 import Content from './components/Content';
 import Header from './components/Header';
-import MainBanner from './components/MainBanner';
-import AboutUs from './components/AboutUs';
-import Directions from './components/Directions';
-import Advantages from './components/Advantages';
-import ContactForm from './components/ContactForm';
+import MainPage from './components/MainPage';
 import Countries from './components/Countries';
 import Footer from './components/Footer';
 
@@ -32,7 +28,7 @@ class App extends Component {
             this.state.appVisibility = false;
 
             clearTimeout(this.timeoutId)
-        }, 200);
+        });
     }
 
     componentDidMount() {
@@ -63,12 +59,10 @@ class App extends Component {
             <main className={appClassName}>
                 <Content>
                     <Header/>
-                    <MainBanner/>
-                    <AboutUs/>
-                    <Directions/>
-                    <Advantages/>
-                    <ContactForm/>
-                    <Route path="/countries" component={Countries}/>
+                    <Switch>
+                        <Route path="/countries" component={Countries}/>
+                        <Route path="/" component={MainPage}/>
+                    </Switch>
                     <Footer/>
                 </Content>
             </main>

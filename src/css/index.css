@@ -18,11 +18,11 @@ h1 {
 
 .app {
   opacity: 0;
-  transition: .3s;
 }
 
 .app-visible{
   opacity: 1;
+  transition: opacity, .6s;
 }
 
 /*Content*/
@@ -414,6 +414,57 @@ h1 {
   }
 }
 
+/*Countries*/
+
+.countries {
+    padding: 40px 20px;
+}
+
+.countries__calendar {
+    display: flex;
+    justify-content: center;
+}
+
+.countries__calendar .react-calendar {
+    background-color: rgba(137, 222, 206, 1);
+}
+
+.countries .countries__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.countries .countries__list li {
+    position: relative;
+    width: 260px;
+    height: 130px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 1px solid;
+}
+
+.countries .countries__list li .countries__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(251, 222, 222, 0.65);
+    font: 30px "Footlight MT Light";
+    opacity: 0;
+    transition: opacity, .2s;
+    cursor: pointer;
+}
+
+.countries .countries__list li:hover .countries__name {
+    opacity: .65;
+}
 
 /*Footer*/
 
