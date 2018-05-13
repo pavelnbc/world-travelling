@@ -1,110 +1,110 @@
 [
   {
     "name": "France",
-    "img": "/img/"
+    "img": "/img/countries/france.jpg"
   },
   {
     "name": "United Kingdom",
-    "img": "/img/"
+    "img": "/img/countries/uk.jpg"
   },
   {
     "name": "Belgium",
-    "img": "/img/"
+    "img": "/img/countries/belgium.jpg"
   },
   {
     "name": "Spain",
-    "img": "/img/"
+    "img": "/img/countries/spain.jpg"
   },
   {
     "name": "Switzerland",
-    "img": "/img/"
+    "img": "/img/countries/switzerland.jpg"
   },
   {
     "name": "Sweden",
-    "img": "/img/"
+    "img": "/img/countries/sweden.jpeg"
   },
   {
     "name": "Germany",
-    "img": "/img/"
+    "img": "/img/countries/germany.jpg"
   },
   {
     "name": "India",
-    "img": "/img/"
+    "img": "/img/countries/india.jpg"
   },
   {
     "name": "Japan",
-    "img": "/img/"
+    "img": "/img/countries/japan.jpg"
   },
   {
     "name": "Italy",
-    "img": "/img/"
+    "img": "/img/countries/italy.jpg"
   },
   {
     "name": "Denmark",
-    "img": "/img/"
+    "img": "/img/countries/denmark.jpg"
   },
   {
     "name": "Poland",
-    "img": "/img/"
+    "img": "/img/countries/poland.jpg"
   },
   {
     "name": "Serbia",
-    "img": "/img/"
+    "img": "/img/countries/serbia.jpg"
   },
   {
     "name": "China",
-    "img": "/img/"
+    "img": "/img/countries/china.jpg"
   },
   {
     "name": "Turkey",
-    "img": "/img/"
+    "img": "/img/countries/turkey.jpg"
   },
   {
     "name": "Egypt",
-    "img": "/img/"
+    "img": "/img/countries/egypt.jpg"
   },
   {
     "name": "Israel",
-    "img": "/img/"
+    "img": "/img/countries/israel.jpg"
   },
   {
     "name": "Cyprus",
-    "img": "/img/"
+    "img": "/img/countries/cyprus.jpg"
   },
   {
     "name": "Finland",
-    "img": "/img/"
+    "img": "/img/countries/finland.jpg"
   },
   {
     "name": "Russia",
-    "img": "/img/"
+    "img": "/img/countries/russia.jpg"
   },
   {
     "name": "Ukraine",
-    "img": "/img/"
+    "img": "/img/countries/ukraine.jpg"
   },
   {
     "name": "Portugal",
-    "img": "/img/"
+    "img": "/img/countries/portugal.jpg"
   },
   {
     "name": "Norway",
-    "img": "/img/"
+    "img": "/img/countries/norway.jpg"
   },
   {
     "name": "Iceland",
-    "img": "/img/"
+    "img": "/img/countries/iceland.jpg"
   },
   {
     "name": "Brazil",
-    "img": "/img/"
+    "img": "/img/countries/brazil.jpg"
   },
   {
     "name": "Argentina",
-    "img": "/img/"
+    "img": "/img/countries/argentina.jpg"
   },
   {
     "name": "Cuba",
-    "img": "/img/"
+    "img": "/img/countries/cuba.jpg"
   }
 ]

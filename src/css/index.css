@@ -445,7 +445,14 @@ h1 {
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 20px;
+    overflow: hidden;
     border: 1px solid;
+    border-radius: 4px;
+}
+
+.countries .countries__list li img {
+    width: 260px;
+    height: 130px;
 }
 
 .countries .countries__list li .countries__name {
@@ -457,15 +464,32 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(251, 222, 222, 0.65);
+    background-color: rgba(251, 222, 222, .7);
     font: 30px "Footlight MT Light";
+    color: #2b1859;
     opacity: 0;
     transition: opacity, .3s;
     cursor: pointer;
 }
 
 .countries .countries__list li:hover .countries__name {
-    opacity: .65;
+    opacity: 1;
+}
+
+/*Anchor*/
+
+.anchor {
+  position: fixed;
+  bottom: 100px;
+  left: 4%;
+  width: 80px;
+  height: 80px;
+  background: url('/img/rocket.png') no-repeat;
+  background-size: 80px;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 107;
 }
 
 /*Footer*/
