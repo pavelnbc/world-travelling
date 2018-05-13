@@ -481,7 +481,7 @@ h1 {
 .anchor {
   position: fixed;
   bottom: 100px;
-  left: 4%;
+  right: 5%;
   width: 80px;
   height: 80px;
   background: url('/img/rocket.png') no-repeat;
