@@ -292,6 +292,10 @@ h1 {
   opacity: 1;
 }
 
+.direction::selection {
+  background: transparent;
+}
+
 @media only screen and (max-width: 767px) {
   .directions__list img {
     width: 400px;
@@ -474,7 +478,11 @@ h1 {
     opacity: 1;
 }
 
-/*Anchor*/
+.countries .countries__list li .countries__name::selection {
+  background: transparent;
+}
+
+  /*Anchor*/
 
 .anchor {
   position: fixed;
