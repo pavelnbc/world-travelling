@@ -25,7 +25,11 @@ function HeaderComponent({ isMobileMenuOpened, setMobileMenuOpened }) {
                                 <div></div>
                                 <div></div>
                             </div>
-                            <h2 className="header__title">World Traveling</h2>
+                            <h2 className="header__title">
+                                <NavLink to="/">
+                                    World Traveling
+                                </NavLink>
+                            </h2>
                             <div className={mobileMenuClass}>
                                 <ul className="mobile-menu__list">
                                     <li>
