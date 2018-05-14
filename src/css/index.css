@@ -284,17 +284,16 @@ h1 {
   cursor: pointer;
   font: 40px Georgia;
   color: royalblue;
+  user-select: none;
   opacity: 0;
   transition: opacity 0.3s;
+
 }
 
 .directions__list li:hover .direction {
   opacity: 1;
 }
 
-.direction::selection {
-  background: transparent;
-}
 
 @media only screen and (max-width: 767px) {
   .directions__list img {
@@ -469,17 +468,15 @@ h1 {
     background-color: rgba(251, 222, 222, .7);
     font: 30px "Footlight MT Light";
     color: #2b1859;
+    user-select: none;
     opacity: 0;
     transition: opacity, .3s;
+
     cursor: pointer;
 }
 
 .countries .countries__list li:hover .countries__name {
     opacity: 1;
-}
-
-.countries .countries__list li .countries__name::selection {
-  background: transparent;
 }
 
   /*Anchor*/
