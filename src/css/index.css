@@ -523,7 +523,8 @@ h1 {
   height: 500px;
   padding: 50px 0;
   background: #008aff;
-  border: 1px solid #fff;
+  border: 1px solid #f4d5d5;
+  border-radius: 10px;
   font: 40px "";
   text-align: center;
   line-height: 100px;
@@ -553,6 +554,7 @@ h1 {
   width: 70%;
   padding: 30px;
   margin: 30px auto;
+  text-align: center;
   border: 1px solid #2f2e2e;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.33);
@@ -566,6 +568,34 @@ h1 {
   border: none;
 }
 
+.contacts p {
+  margin-bottom: 10px;
+}
+
+.contacts-bold {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 762px) {
+  .contacts {
+    width: 70%;
+    padding: 10px;
+    margin: 30px auto;
+    border: 1px solid #2f2e2e;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.33);
+  }
+
+  .contacts__map {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    border: none;
+  }
+
+}
+
 /*About*/
 
 .about {
@@ -577,6 +607,7 @@ h1 {
   border: 2px solid #2f2e2e;
   border-radius: 10px;
 }
+
 
 /*Anchor*/
 

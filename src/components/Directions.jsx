@@ -19,9 +19,9 @@ class DirectionsComponent extends Component {
                     {directions.map((direction) => {
                         return (
                             <li>
-                                <NavLink to={`/countries/${direction.name}`}>
-                                    <img src={direction.img} alt={direction.name}/>
-                                    <div className="direction">{direction.name}</div>
+                                <NavLink to={`/countries/${direction.direction}`}>
+                                    <img src={direction.img} alt={direction.direction}/>
+                                    <div className="direction">{direction.direction}</div>
                                 </NavLink>
                             </li>
                         )
