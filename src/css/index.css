@@ -243,7 +243,8 @@ h1 {
 
 @media only screen and (max-width: 767px) {
   .services {
-    width: 80%;
+    width: 90%;
+    padding: 0 20px 30px;
     font: 14px Garamond bold;
   }
 }
@@ -354,6 +355,8 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
+
+
   .advantages__list li {
     width: 100px;
     font-size: 15px;
@@ -616,6 +619,13 @@ h1 {
   border-radius: 10px;
 }
 
+@media only screen and (max-width: 762px) {
+  .about {
+    width: 85%;
+    padding: 0 13px 20px;
+    font: 14px Roboto;
+  }
+}
 
 /*Anchor*/
 
