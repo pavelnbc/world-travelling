@@ -1,6 +1,6 @@
-import { IMPORT_COUNTRIES } from '../actions';
+import { IMPORT_COUNTRIES, IMPORT_DIRECTIONS } from '../actions';
 
-const countriesReducer = (state = [], action) => {
+export const countriesReducer = (state = [], action) => {
     switch(action.type) {
         case IMPORT_COUNTRIES:
             return action.countries;
@@ -10,4 +10,12 @@ const countriesReducer = (state = [], action) => {
     }
 };
 
-export default countriesReducer
+export const directionsReducer = (state = [], action) => {
+    switch (action.type) {
+        case IMPORT_DIRECTIONS:
+            return action.directions
+
+        default:
+            return state
+    }
+}

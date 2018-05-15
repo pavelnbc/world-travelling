@@ -4,4 +4,4 @@ export { OPEN_MOBILE_MENU,
     setMobileMenuClosed
 } from './mobileMenuActions';
 
-export { IMPORT_COUNTRIES, importCountries } from './countriesActions'
+export { IMPORT_COUNTRIES, IMPORT_DIRECTIONS, importCountries, importDirections } from './countriesActions'

@@ -1,5 +1,8 @@
 @import 'grid.css';
 
+html, body, .root {
+  height: 100%;
+}
 
 body {
   margin: 0;
@@ -17,6 +20,10 @@ h1 {
 /*App*/
 
 .app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   opacity: 0;
 }
 
@@ -28,6 +35,7 @@ h1 {
 /*Content*/
 
 .content {
+  flex: 1 0 auto;
   background: url('/img/contact-background.jpg');
   background-size: 300px;
 }
@@ -230,7 +238,7 @@ h1 {
   font: 22px Garamond bold;
   border: 2px solid #2f2e2e;
   border-radius: 10px;
-  background-color: rgba(255, 2555, 255, 0.33);
+  background-color: rgba(255, 255, 255, 0.33);
 }
 
 @media only screen and (max-width: 767px) {
@@ -480,7 +488,42 @@ h1 {
     opacity: 1;
 }
 
-  /*Anchor*/
+/*Country*/
+
+.country {
+  width: 70%;
+  margin: 50px auto;
+  padding: 30px 60px;
+  border: 1px solid #2f2e2e;
+  border-radius: 10px;
+  font: bold 16px Garamond;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.33);
+}
+
+.country img {
+  display: block;
+  width: 800px;
+  height: 450px;
+  border-radius: 5px;
+  margin: 0 auto 30px;
+}
+
+.country__back-btn {
+  width: 160px;
+  margin: 30px auto 0;
+  padding: 10px;
+  background-color: #2f2e2e;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #f4d5d5;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Anchor*/
 
 .anchor {
   position: fixed;
@@ -499,6 +542,7 @@ h1 {
 /*Footer*/
 
 footer {
+  flex: 0 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;

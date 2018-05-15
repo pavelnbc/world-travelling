@@ -1,37 +1,49 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 
-function Directions() {
-    return (
-        <section className="directions">
-            <h1>The most popular directions</h1>
-            <ul className="directions__list">
-                <li>
-                    <img src="/img/directions/paris.jpg" alt="Paris"/>
-                    <div className="direction">Paris</div>
-                </li>
-                <li>
-                    <img src="/img/directions/london.jpg" alt="London"/>
-                    <div className="direction">London</div>
-                </li>
-                <li>
-                    <img src="/img/directions/rome.jpg" alt="Rome"/>
-                    <div className="direction">Rome</div>
-                </li>
-                <li>
-                    <img src="/img/directions/madrid.jpg" alt="Madrid"/>
-                    <div className="direction">Madrid</div>
-                </li>
-                <li>
-                    <img src="/img/directions/praga.jpg" alt="Prague"/>
-                    <div className="direction">Prague</div>
-                </li>
-                <li>
-                    <img src="/img/directions/vienna.jpg" alt="Vienna"/>
-                    <div className="direction">Vienna</div>
-                </li>
-            </ul>
-        </section>
-    )
+import { importDirections } from '../actions';
+
+class DirectionsComponent extends Component {
+    componentWillMount() {
+        this.props.importDirections();
+    }
+
+    render() {
+        let { directions } = this.props;
+
+        return (
+            <section className="directions">
+                <h1>The most popular directions</h1>
+                <ul className="directions__list">
+                    {directions.map((direction) => {
+                        return (
+                            <li>
+                                <NavLink to={`/countries/${direction.name}`}>
+                                    <img src={direction.img} alt={direction.name}/>
+                                    <div className="direction">{direction.name}</div>
+                                </NavLink>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </section>
+        )
+    }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        directions: state.directions
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        importDirections: () => dispatch(importDirections())
+    }
+}
+
+const Directions = connect(mapStateToProps, mapDispatchToProps)(DirectionsComponent);
 
 export default Directions

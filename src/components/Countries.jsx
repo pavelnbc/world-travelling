@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Calendar from 'react-calendar';  /*Календарь*/
 
@@ -23,11 +24,13 @@ class CountriesComponent extends Component {
                         </div>
                         <div className="col-xs-12 col-sm-9 col-md-9 col-lg-9">
                             <ul className="countries__list">
-                                {countries.map((country) => {
+                                {countries.map((country, index) => {
                                     return (
-                                        <li>
-                                            <img src={country.img} alt={country.name}/>
-                                            <div className="countries__name">{country.name}</div>
+                                        <li key={index}>
+                                            <NavLink to={`/countries/${country.name}`}>
+                                                <img src={country.img} alt={country.name}/>
+                                                <div className="countries__name">{country.name}</div>
+                                            </NavLink>
                                         </li>
                                     )
                                 })}

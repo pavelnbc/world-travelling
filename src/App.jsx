@@ -6,6 +6,7 @@ import Content from './components/Content';
 import Header from './components/Header';
 import MainPage from './components/MainPage';
 import Countries from './components/Countries';
+import Country from './components/Country';
 import Anchor from './components/Anchor';
 import Footer from './components/Footer';
 
@@ -61,12 +62,13 @@ class App extends Component {
                 <Content>
                     <Header/>
                     <Switch>
+                        <Route path="/countries/:country" component={Country}/>
                         <Route path="/countries" component={Countries}/>
                         <Route path="/" component={MainPage}/>
                     </Switch>
                     <Anchor/>
-                    <Footer/>
                 </Content>
+                <Footer/>
             </main>
         )
     }

@@ -1,0 +1,26 @@
+[
+  {
+    "direction": "France",
+    "img": "/img/directions/france.jpg"
+  },
+  {
+    "direction": "Malta",
+    "img": "/img/directions/malta.jpg"
+  },
+  {
+    "direction": "Italy",
+    "img": "/img/directions/italy.jpg"
+  },
+  {
+    "direction": "Spain",
+    "img": "/img/directions/spain.jpg"
+  },
+  {
+    "direction": "Czech Rebulic",
+    "img": "/img/directions/cz.jpg"
+  },
+  {
+    "direction": "Austria",
+    "img": "/img/directions/austria.jpg"
+  }
+]
