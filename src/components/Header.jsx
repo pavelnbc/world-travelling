@@ -71,12 +71,8 @@ function HeaderComponent({ isMobileMenuOpened, setMobileMenuOpened }) {
                                 <NavLink to="/services"></NavLink>
                             </li>
                             <li>
-                                Visited Countries
+                                Countries
                                 <NavLink to="/countries"></NavLink>
-                            </li>
-                            <li>
-                                Vacancies
-                                <NavLink to="/vacancies"></NavLink>
                             </li>
                             <li>
                                 About Us

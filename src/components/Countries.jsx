@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
-import Calendar from 'react-calendar';  /*Календарь*/
 
 import { importCountries } from '../actions'
 
@@ -19,7 +18,9 @@ class CountriesComponent extends Component {
                     <div className="row">
                         <div className="xsHidden col-sm-3 col-md-3 col-lg-3">
                             <aside className="countries__calendar">
-                                <Calendar/>
+                                <div className="countries__advertising">
+                                    Your Ad <br/> Could <br/> Appear <br/> Here
+                                </div>
                             </aside>
                         </div>
                         <div className="col-xs-12 col-sm-9 col-md-9 col-lg-9">

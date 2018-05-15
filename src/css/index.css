@@ -229,12 +229,12 @@ h1 {
   }
 }
 
-/*About-section*/
+/*Services*/
 
-.about-section {
+.services {
   width: 65%;
   margin: 0 auto 60px;
-  padding: 0 30px 30px;
+  padding: 0 40px 40px;
   font: 22px Garamond bold;
   border: 2px solid #2f2e2e;
   border-radius: 10px;
@@ -242,7 +242,7 @@ h1 {
 }
 
 @media only screen and (max-width: 767px) {
-  .about-section {
+  .services {
     width: 80%;
     font: 14px Garamond bold;
   }
@@ -430,15 +430,6 @@ h1 {
     padding: 40px 20px;
 }
 
-.countries__calendar {
-    display: flex;
-    justify-content: center;
-}
-
-.countries__calendar .react-calendar {
-    background-color: rgba(155, 236, 221, 1);
-}
-
 .countries .countries__list {
     display: flex;
     justify-content: center;
@@ -510,9 +501,9 @@ h1 {
 }
 
 .country__back-btn {
-  width: 160px;
+  width: 180px;
   margin: 30px auto 0;
-  padding: 10px;
+  padding: 10px 10px;
   background-color: #2f2e2e;
   border-radius: 5px;
   font-size: 15px;
@@ -521,6 +512,54 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.country .fa {
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.countries__advertising {
+  width: 100%;
+  height: 500px;
+  padding: 50px 0;
+  background: #008aff;
+  border: 1px solid #fff;
+  font: 40px "";
+  text-align: center;
+  line-height: 100px;
+  color: #f4d5d5;
+}
+
+/*Contacts*/
+
+.contacts {
+  width: 70%;
+  padding: 30px;
+  margin: 30px auto;
+  border: 1px solid #2f2e2e;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.33);
+}
+
+.contacts__map {
+  display: block;
+  width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  border: none;
+}
+
+/*About*/
+
+.about {
+  width: 60%;
+  padding: 0 30px 30px;
+  margin: 30px auto;
+  font: 20px Roboto;
+  background-color: rgba(255, 255, 255, 0.33);
+  border: 2px solid #2f2e2e;
+  border-radius: 10px;
 }
 
 /*Anchor*/

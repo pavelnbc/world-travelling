@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MainBanner from './MainBanner';
-import AboutUs from './AboutUs';
+import Services from './Services';
 import Directions from './Directions';
 import Advantages from './Advantages';
 import ContactForm from './ContactForm';
@@ -10,7 +10,7 @@ const MainPage = () => {
    return (
        <div>
            <MainBanner/>
-           <AboutUs/>
+           <Services/>
            <Directions/>
            <Advantages/>
            <ContactForm/>

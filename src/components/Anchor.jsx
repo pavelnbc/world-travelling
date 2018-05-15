@@ -5,7 +5,7 @@ class Anchor extends Component {
         const anchor = document.getElementById('anchor');
 
         window.addEventListener('scroll', () => {
-            anchor.style.opacity = document.documentElement.scrollTop / 500 || document.body.scrollTop;
+            anchor.style.opacity = window.pageYOffset / 1000;
         });
     }
 
@@ -15,7 +15,7 @@ class Anchor extends Component {
                 document.documentElement.scrollTop -= 50;
                 document.body.scrollTop -= 50;
 
-                if(window.pageYOffset > 0) {
+                if(window.pageYOffset) {
                     requestAnimationFrame(pageLifter)
                 }
             })

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import FontAwesome from 'react-fontawesome';
 
 import { importCountries } from '../actions';
 
@@ -12,12 +13,11 @@ class CountryComponent extends Component {
     render() {
         let { countries, ownProps } = this.props;
 
+        document.documentElement.scrollTop = 0;
 
         let country = countries.find((country) => {
            return country.name === ownProps.match.params.country
         });
-
-        country = country ? country : {};
 
         return (
             country
@@ -26,7 +26,10 @@ class CountryComponent extends Component {
 
                     <div className="country__description">{country.description}</div>
 
-                    <NavLink to="./" className="country__back-btn">Back to all countries</NavLink>
+                    <NavLink to="./" className="country__back-btn">
+                        <FontAwesome name="long-arrow-left"/>
+                        Back To All Countries
+                    </NavLink>
                 </section>
             : null
         )

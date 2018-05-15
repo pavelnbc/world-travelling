@@ -1,9 +1,10 @@
 import React from 'react';
 
-function AboutUs() {
+const About = () => {
     return (
-        <section className="about-section">
+        <section className="about">
             <h1>Who We Are</h1>
+
             We are a young team of professionals with a high level of experiance in traveeling business. The purpose of our job is
             to do all our best to bring you as much pleasure as we can.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium dolorem iusto minus sed voluptate!
@@ -14,4 +15,4 @@ function AboutUs() {
     )
 }
 
-export default AboutUs
+export default About

@@ -10,7 +10,7 @@ class ContactForm extends Component {
                 <div className="contact-form__address-and-form">
                     <div className="contact-form__address">
                         <p>
-                            10 Oak street, Austin, TX, 35789
+                            10 Oak Crest Ave, Austin, TX, 78704
                         </p>
                         <p>
                             random@aol.com
