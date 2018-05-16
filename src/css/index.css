@@ -134,7 +134,7 @@ h1 {
   left: 40px;
   top: 53px;
   width: 200px;
-  height: 166px;
+  height: 133px;
   border: 1px solid grey;
   border-radius: 5px;
   overflow: hidden;
@@ -563,8 +563,8 @@ h1 {
 /*Contacts*/
 
 .contacts {
-  width: 70%;
-  padding: 30px;
+  width: 60%;
+  padding: 20px;
   margin: 30px auto;
   text-align: center;
   border: 1px solid #2f2e2e;
@@ -574,9 +574,9 @@ h1 {
 
 .contacts__map {
   display: block;
-  width: 80%;
+  width: 100%;
   height: 400px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   border: none;
 }
 
@@ -590,7 +590,7 @@ h1 {
 
 @media only screen and (max-width: 762px) {
   .contacts {
-    width: 70%;
+    width: 85%;
     padding: 10px;
     margin: 30px auto;
     border: 1px solid #2f2e2e;
@@ -611,13 +611,18 @@ h1 {
 
 .about {
   width: 60%;
-  padding: 0 30px 30px;
+  padding: 30px 30px 30px;
   margin: 30px auto;
   font: 20px Roboto;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.33);
   border: 2px solid #2f2e2e;
   border-radius: 10px;
+}
+
+.about img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 762px) {

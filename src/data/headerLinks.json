@@ -5,11 +5,6 @@
     "linkIcon": "home"
   },
   {
-    "name": "Services",
-    "linkPath": "/services",
-    "linkIcon": "wrench"
-  },
-  {
     "name": "Countries",
     "linkPath": "/countries",
     "linkIcon": "globe"

@@ -3,6 +3,8 @@ import React from 'react';
 const About = () => {
     return (
         <section className="about">
+            <img src="/img/about-us.jpg" alt="About Us"/>
+
             <h1>Who We Are</h1>
 
             We are a young team of professionals with a high level of experiance in traveeling business. The purpose of our job is
