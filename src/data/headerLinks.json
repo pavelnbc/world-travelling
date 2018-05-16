@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Main",
+    "linkPath": "/",
+    "linkIcon": "home"
+  },
+  {
+    "name": "Services",
+    "linkPath": "/services",
+    "linkIcon": "wrench"
+  },
+  {
+    "name": "Countries",
+    "linkPath": "/countries",
+    "linkIcon": "globe"
+  },
+  {
+    "name": "About Us",
+    "linkPath": "/about",
+    "linkIcon": "question"
+  },
+  {
+    "name": "Contacts",
+    "linkPath": "/contacts",
+    "linkIcon": "phone"
+  }
+]
