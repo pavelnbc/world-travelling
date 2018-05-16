@@ -658,6 +658,13 @@ footer {
   font-family: Garamond;
 }
 
+@media only screen and (max-width: 762px) {
+  footer {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+
 
 
 
