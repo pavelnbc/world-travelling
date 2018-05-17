@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
@@ -35,6 +36,12 @@ class CountryComponent extends Component {
         )
     }
 }
+
+CountryComponent.propTypes = {
+    countries: PropTypes.array,
+    ownProps: PropTypes.object,
+    importCountries: PropTypes.func
+};
 
 let mapStateToProps = (state, ownProps) => {
     return {

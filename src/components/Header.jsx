@@ -80,6 +80,8 @@ function HeaderComponent() {
 
 HeaderComponent.propTypes = {
     isMobileMenuOpened: PropTypes.bool,
+    headerLinks: PropTypes.array,
+    importHeaderLinks: PropTypes.func,
     setMobileMenuOpened: PropTypes.func
 };
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
@@ -32,17 +33,22 @@ class DirectionsComponent extends Component {
     }
 }
 
+DirectionsComponent.propTypes = {
+    directions: PropTypes.array,
+    importDirections: PropTypes.func
+};
+
 const mapStateToProps = (state) => {
     return {
         directions: state.directions
     }
-}
+};
 
 const mapDispatchToProps = (dispatch) => {
     return {
         importDirections: () => dispatch(importDirections())
     }
-}
+};
 
 const Directions = connect(mapStateToProps, mapDispatchToProps)(DirectionsComponent);
 

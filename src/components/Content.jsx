@@ -21,7 +21,8 @@ function ContentComponent({ children, setMobileMenuClosed }) {
 }
 
 ContentComponent.propTypes = {
-    setMobileMenuClosed: PropTypes.func
+    setMobileMenuClosed: PropTypes.func,
+    children: PropTypes.any
 };
 
 let mapDispatchToProps = (dispatch) => {
