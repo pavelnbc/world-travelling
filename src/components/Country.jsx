@@ -21,7 +21,7 @@ class CountryComponent extends Component {
         });
 
         return (
-            /*country
+            country
             ? <section className="country">
                     <img src={country.img} alt={country.name}/>
 
@@ -32,7 +32,7 @@ class CountryComponent extends Component {
                         Back To All Countries
                     </NavLink>
                 </section>
-            :*/ null
+            : null
         )
     }
 }
