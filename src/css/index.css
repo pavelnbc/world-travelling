@@ -543,7 +543,7 @@ h1 {
 @media only screen and (max-width: 762px) {
   .country {
     width: 85%;
-    margin: 20px auto;
+    margin: 20px auto 40px;
     font-size: 10px;
     padding: 10px;
   }
