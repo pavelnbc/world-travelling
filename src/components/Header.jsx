@@ -16,8 +16,6 @@ class HeaderComponent extends Component {
     render() {
         let { headerLinks, isMobileMenuOpened, setMobileMenuOpened } = this.props;
 
-        console.log(headerLinks);
-
         let mobileMenuClass = classNames({
             'mobile-menu': true,
             'folded': isMobileMenuOpened
