@@ -43,7 +43,7 @@ h1 {
 
 .content {
   flex: 1 0 auto;
-  background: url('/img/contact-background.jpg');
+  background: fixed url('/img/contact-background.jpg');
   background-size: 300px;
 }
 
