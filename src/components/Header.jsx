@@ -21,6 +21,10 @@ class HeaderComponent extends Component {
             'folded': isMobileMenuOpened
         });
 
+        let onTopPage = () => {
+            document.documentElement.scrollTop = 0;
+        };
+
         return (
             <header className="header" id="header">
                 <div className="grid">
@@ -32,13 +36,13 @@ class HeaderComponent extends Component {
                                     <div></div>
                                     <div></div>
                                 </div>
-                                <h2 className="header__title">
+                                <h2 className="header__title" onClick={onTopPage}>
                                     <NavLink to="/">
                                         World Traveling
                                     </NavLink>
                                 </h2>
                                 <div className={mobileMenuClass}>
-                                    <ul className="mobile-menu__list">
+                                    <ul className="mobile-menu__list" onClick={onTopPage}>
                                         {headerLinks.map((link) => {
                                             return (
                                                 <li>
@@ -54,7 +58,7 @@ class HeaderComponent extends Component {
                             </div>
                         </div>
                         <div className="xsHidden col-sm-12 col-md-12 col-lg-12">
-                            <ul className="header__list">
+                            <ul className="header__list" onClick={onTopPage}>
                                 {headerLinks.map((link) => {
                                     return (
                                         <li>
