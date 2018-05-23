@@ -23,7 +23,10 @@ class CountryComponent extends Component {
         return (
             country
             ? <section className="country">
-                    <img src={country.img} alt={country.name}/>
+                    <div className="country__banner">
+                        <img src={country.img} alt={country.name}/>
+                        <div className="country__desc">{country.name}</div>
+                    </div>
 
                     <div className="country__description">{country.description}</div>
 

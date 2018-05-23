@@ -17,6 +17,14 @@ h1 {
   text-shadow: 1px 1px 1px;
 }
 
+.under-line {
+  width: 40px;
+  height: 3px;
+  margin: -30px auto 30px;
+  background-color: #372828;
+  text-shadow: 1px 1px 1px;
+}
+
 /*App*/
 
 .app {
@@ -501,12 +509,37 @@ h1 {
   background-color: rgba(255, 255, 255, 0.33);
 }
 
+.country__banner {
+  position: relative;
+}
+
+.country__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 150px;
+  color: royalblue;
+  background-color: rgba(251, 222, 222, 0.65);
+  opacity: 0;
+  transition: opacity .4s;
+}
+
+.country__banner:hover .country__desc {
+  opacity: 1;
+}
+
 .country img {
   display: block;
   width: 100%;
   border-radius: 5px;
   margin: 0 auto 30px;
 }
+
 
 .country__back-btn {
   width: 180px;

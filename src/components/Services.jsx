@@ -4,6 +4,7 @@ function Services() {
     return (
         <section className="services">
             <h1>Our Services</h1>
+            <div className="under-line"></div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta doloremque minus nostrum perferendis vitae.
             Architecto consequatur consequuntur debitis delectus, distinctio doloribus excepturi illo iure minima modi, nemo quam soluta ullam.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi asperiores aspernatur at debitis ea eligendi eveniet, expedita explicabo, inventore ipsum modi mollitia nam officia omnis quis repellat sint tempore, vero.

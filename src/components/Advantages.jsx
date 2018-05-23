@@ -4,6 +4,7 @@ function Advantages() {
     return (
         <section className="advantages">
             <h1>Our Advantages</h1>
+            <div className="under-line"></div>
             <ul className="advantages__list">
                 <li>
                     <img src="/img/advantage__icons/clock.png" alt="clock"/>

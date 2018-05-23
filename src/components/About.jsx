@@ -6,6 +6,7 @@ const About = () => {
             <img src="/img/about-us.jpg" alt="About Us"/>
 
             <h1>Who We Are</h1>
+            <div className="under-line"></div>
 
             We are a young team of professionals with a high level of experiance in traveeling business. The purpose of our job is
             to do all our best to bring you as much pleasure as we can.
