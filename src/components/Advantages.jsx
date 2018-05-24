@@ -4,16 +4,19 @@ class Advantages extends Component {
     componentDidMount() {
         window.addEventListener('scroll', () => {               // Плавно пояявляющиеся advantages
             let advantages = document.getElementById('advantages');
-            let advantagesChildren = document.getElementById('advantages').childNodes;
-            let timer = 0;
 
-            if(window.scrollY >= advantages.offsetTop - advantages.offsetHeight) {
-                for(let i = 0; i < advantagesChildren.length; i++) {
-                    timer += 200;
+            if(advantages) {
+                let advantagesChildren = document.getElementById('advantages').childNodes;
+                let timer = 0;
 
-                    setTimeout(() => {
-                        advantagesChildren[i].style.opacity = 1;
-                    }, timer);
+                if(window.scrollY >= advantages.offsetTop - advantages.offsetHeight) {
+                    for(let i = 0; i < advantagesChildren.length; i++) {
+                        timer += 200;
+
+                        setTimeout(() => {
+                            advantagesChildren[i].style.opacity = 1;
+                        }, timer);
+                    }
                 }
             }
         })
