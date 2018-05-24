@@ -14,7 +14,7 @@ class DirectionsComponent extends Component {
         let { directions } = this.props;
 
         return (
-            <section className="directions">
+            <section className="directions" id="indicator">
                 <h1>The most popular directions</h1>
                 <ul className="directions__list">
                     {directions.map((direction) => {

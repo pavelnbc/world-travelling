@@ -2,10 +2,10 @@ import React from 'react';
 
 function Advantages() {
     return (
-        <section className="advantages">
+        <section className="advantages" >
             <h1>Our Advantages</h1>
             <div className="under-line"></div>
-            <ul className="advantages__list">
+            <ul className="advantages__list" id="advantages">
                 <li>
                     <img src="/img/advantage__icons/clock.png" alt="clock"/>
                     Fast filling of documents

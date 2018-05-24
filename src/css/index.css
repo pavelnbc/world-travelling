@@ -334,7 +334,15 @@ h1 {
   padding-bottom: 40px;
   border: 2px solid;
   border-radius: 10px;
-  background-color: rgba(255, 2555, 255, 0.33);}
+  background-color: rgba(255, 2555, 255, 0.33);
+  /*opacity: 0;*/
+}
+
+/*
+.advantages__visible {
+  opacity: 1;
+}
+*/
 
 .advantages__list {
   display: flex;
@@ -361,6 +369,8 @@ h1 {
   border: 2px solid;
   border-radius: 10px;
   font: bold 18px "Bell MT";
+  opacity: 0;
+  transition: opacity .5s;
 }
 
 @media screen and (max-width: 767px) {

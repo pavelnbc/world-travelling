@@ -40,13 +40,29 @@ class App extends Component {
 
         let header = document.getElementById('header');
 
-        window.addEventListener('scroll', () => {
-            if(window.scrollY > 50) {
+        window.addEventListener('scroll', () => {               // фиксированный хедер
+            if(window.scrollY > header.offsetHeight / 2) {
                 header.classList.add('header__fixed');
             } else {
                 header.classList.remove('header__fixed');
             }
         });
+
+        window.addEventListener('scroll', () => {               // Плавно пояявляющиеся advantages
+            let advantages = document.getElementById('advantages');
+            let advantagesChildren = document.getElementById('advantages').childNodes;
+            let timer = 0;
+
+            if(window.scrollY >= advantages.offsetTop - advantages.offsetHeight) {
+                for(let i = 0; i < advantagesChildren.length; i++) {
+                    timer += 200;
+
+                    setTimeout(() => {
+                        advantagesChildren[i].style.opacity = 1;
+                    }, timer);
+                }
+            }
+        })
     }
 
     componentDidUpdate() {
