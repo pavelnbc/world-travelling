@@ -70,6 +70,7 @@ h1 {
 }
 
 .header__list li {
+  display: inline-block;
   position: relative;
   margin-right: 40px;
   color: #f4d5d5;
@@ -444,6 +445,10 @@ h1 {
   .contact-form {
     width: 80%;
   }
+
+  .contact-form__address p {
+    font: 15px "Bell MT";
+  }
 }
 
 /*Countries*/
@@ -690,7 +695,7 @@ h1 {
 .anchor {
   position: fixed;
   bottom: 60px;
-  right: 5%;
+  left: 5%;
   width: 80px;
   height: 80px;
   background: url('/img/rocket.png') no-repeat;

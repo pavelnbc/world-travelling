@@ -10,13 +10,13 @@ class Advantages extends Component {
                 let timer = 0;
 
                 if(window.scrollY >= advantages.offsetTop - advantages.offsetHeight) {
-                    for(let i = 0; i < advantagesChildren.length; i++) {
-                        timer += 200;
+                   advantagesChildren.forEach((chield) => {
+                       timer += 200;
 
-                        setTimeout(() => {
-                            advantagesChildren[i].style.opacity = 1;
-                        }, timer);
-                    }
+                       setTimeout(() => {
+                           chield.style.opacity = 1
+                       }, timer)
+                   })
                 }
             }
         })
