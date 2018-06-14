@@ -17,9 +17,9 @@ class DirectionsComponent extends Component {
             <section className="directions" id="indicator">
                 <h1>The most popular directions</h1>
                 <ul className="directions__list">
-                    {directions.map((direction) => {
+                    {directions.map((direction, index) => {
                         return (
-                            <li>
+                            <li key={index}>
                                 <NavLink to={`/countries/${direction.direction}`}>
                                     <img src={direction.img} alt={direction.direction}/>
                                     <div className="direction">{direction.direction}</div>

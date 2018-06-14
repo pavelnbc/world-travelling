@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import FontAwesome from 'react-fontawesome';
 import classNames from 'classnames';
 import { connect } from 'react-redux';
@@ -43,9 +43,9 @@ class HeaderComponent extends Component {
                                 </h2>
                                 <div className={mobileMenuClass}>
                                     <ul className="mobile-menu__list" onClick={onTopPage}>
-                                        {headerLinks.map((link) => {
+                                        {headerLinks.map((link, index) => {
                                             return (
-                                                <li>
+                                                <li key={index}>
                                                     <NavLink to={link.linkPath}>
                                                         <FontAwesome name={link.linkIcon}/>
                                                         {link.name}
@@ -59,9 +59,9 @@ class HeaderComponent extends Component {
                         </div>
                         <div className="xsHidden col-sm-12 col-md-12 col-lg-12">
                             <ul className="header__list" onClick={onTopPage}>
-                                {headerLinks.map((link) => {
+                                {headerLinks.map((link, index) => {
                                     return (
-                                        <li>
+                                        <li key={index}>
                                             {link.name}
                                             <NavLink exact to={link.linkPath}></NavLink>
                                         </li>
@@ -74,10 +74,6 @@ class HeaderComponent extends Component {
             </header>
         )
     }
-}
-
-function HeaderComponent() {
-
 }
 
 HeaderComponent.propTypes = {
