@@ -10,6 +10,7 @@ import Country from './components/Country';
 import Contacts from './components/Contacts';
 import About from './components/About';
 import Anchor from './components/Anchor';
+import DialogNotification from './components/DialogNotification';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -71,6 +72,7 @@ class App extends Component {
                         <Route path="/" component={MainPage}/>
                     </Switch>
                     <Anchor/>
+                    <DialogNotification/>
                 </Content>
                 <Footer/>
             </main>
