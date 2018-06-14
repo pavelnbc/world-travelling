@@ -1,0 +1,32 @@
+[
+  {
+    "img": "/img/advantage__icons/clock.png",
+    "alt": "clock",
+    "title": "Fast filling of documents"
+  },
+  {
+    "img": "/img/advantage__icons/world.png",
+    "alt": "world",
+    "title": "Large variety of counties"
+  },
+  {
+    "img": "/img/advantage__icons/experience.png",
+    "alt": "experience",
+    "title": "Ten years experience in <br/> traveling business"
+  },
+  {
+    "img": "/img/advantage__icons/manager.png",
+    "alt": "manager",
+    "title": "Your personal manager in tour"
+  },
+  {
+    "img": "/img/advantage__icons/discounts.png",
+    "alt": "discounts",
+    "title": "Discounts for repeat customers"
+  },
+  {
+    "img": "/img/advantage__icons/support.png",
+    "alt": "support",
+    "title": "24/7 customers support"
+  }
+]

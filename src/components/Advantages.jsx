@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
-class Advantages extends Component {
+import { importAdvantages } from '../actions'
+
+class AdvantagesComponent extends Component {
+    componentWillMount() {
+        this.props.importAdvantages();
+    }
+
     componentDidMount() {
         window.addEventListener('scroll', () => {               // Плавно пояявляющиеся advantages
             let advantages = document.getElementById('advantages');
@@ -10,11 +17,11 @@ class Advantages extends Component {
                 let timer = 0;
 
                 if(window.scrollY >= advantages.offsetTop - advantages.offsetHeight) {
-                   advantagesChildren.forEach((chield) => {
+                   advantagesChildren.forEach((child) => {
                        timer += 200;
 
                        setTimeout(() => {
-                           chield.style.opacity = 1
+                           child.style.opacity = 1
                        }, timer)
                    })
                 }
@@ -23,39 +30,39 @@ class Advantages extends Component {
     }
 
     render() {
+        const { advantages } = this.props;
+
         return (
             <section className="advantages" >
                 <h1>Our Advantages</h1>
                 <div className="under-line"></div>
                 <ul className="advantages__list" id="advantages">
-                    <li>
-                        <img src="/img/advantage__icons/clock.png" alt="clock"/>
-                        Fast filling of documents
-                    </li>
-                    <li>
-                        <img src="/img/advantage__icons/world.png" alt="world"/>
-                        Large variety of counties
-                    </li>
-                    <li>
-                        <img src="/img/advantage__icons/experience.png" alt="experience"/>
-                        Ten years experience in <br/> traveling business
-                    </li>
-                    <li>
-                        <img src="/img/advantage__icons/manager.png" alt="manager"/>
-                        Your personal manager in tour
-                    </li>
-                    <li>
-                        <img src="/img/advantage__icons/discounts.png" alt="discounts"/>
-                        Discounts for repeat customers
-                    </li>
-                    <li>
-                        <img src="/img/advantage__icons/support.png" alt="support"/>
-                        24/7 customers support
-                    </li>
+                    {advantages.map((advantage) => {
+                        return (
+                            <li>
+                                <img src={advantage.img} alt={advantage.alt}/>
+                                {advantage.title}
+                            </li>
+                        )
+                    })}
                 </ul>
             </section>
         )
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        advantages: state.advantages
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        importAdvantages: () => dispatch(importAdvantages())
+    }
+};
+
+const Advantages = connect(mapStateToProps, mapDispatchToProps)(AdvantagesComponent);
 
 export default Advantages
