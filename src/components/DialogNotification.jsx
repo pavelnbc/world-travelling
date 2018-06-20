@@ -2,32 +2,99 @@ import React, { Component } from 'react';
 
 class DialogNotification extends Component {
     componentDidMount() {
-        this.dialog = document.getElementById('dialog');
+        const chat = document.getElementById('chat');
+        const chatImg = document.getElementById('chat-img');
+        const ring1 = document.getElementById('ring1');
+        const ring2 = document.getElementById('ring2');
 
-        setTimeout(() => {
-            this.dialog.classList.add('dialog-notification__shown');
-        }, 2000);
+        setTimeout(() => {          // Появление приглашения в чат
+            chat.classList.add('appeared');
+        }, 3000);
 
-/*        setInterval(() => {
-            dialog.classList.add('dialog-notification__expanded-ring');
+        setInterval(() => {         // Привлекающие кольца
+            ring1.classList.add('expanded');
 
             setTimeout(() => {
-                dialog.classList.remove('dialog-notification__expanded-ring');
+                ring2.classList.add('expanded');
+            }, 700);
 
-            }, 500)
-        }, 2000)*/
-    }
+            setTimeout(() => {
+                ring1.classList.remove('expanded');
+                ring2.classList.remove('expanded');
+            }, 3900);
+        }, 4000);
+
+        setInterval(() => {         // Дребезжание приглашения в чат
+            setTimeout(() => {
+                chatImg.style.transform = 'rotate(15deg)';
+
+                setTimeout(() => {
+                    chatImg.style.transform = 'rotate(-15deg)';
+
+                    setTimeout(() => {
+                        chatImg.style.transform = 'rotate(15deg)';
+
+                        setTimeout(() => {
+                            chatImg.style.transform = 'rotate(-15deg)';
+
+                            setTimeout(() => {
+                                chatImg.style.transform = 'rotate(15deg)';
+
+                                setTimeout(() => {
+                                    chatImg.style.transform = 'rotate(-15deg)';
+
+                                    setTimeout(() => {
+                                        chatImg.style.transform = 'rotate(15deg)';
+
+                                        setTimeout(() => {
+                                            chatImg.style.transform = 'rotate(-15deg)';
+
+                                            setTimeout(() => {
+                                                chatImg.style.transform = 'rotate(15deg)';
+
+                                                setTimeout(() => {
+                                                    chatImg.style.transform = 'rotate(-15deg)';
+
+                                                    setTimeout(() => {
+                                                        chatImg.style.transform = 'rotate(15deg)';
+
+                                                        setTimeout(() => {
+                                                            chatImg.style.transform = 'rotate(5deg)';
+
+                                                            setTimeout(() => {
+                                                                chatImg.style.transform = 'rotate(0deg)';
+                                                            }, 70)
+                                                        }, 70)
+                                                    }, 70)
+                                                }, 70)
+                                            }, 70)
+                                        }, 70)
+                                    }, 70)
+                                }, 70)
+                            }, 70)
+                        }, 70)
+                    }, 70)
+                }, 70)
+            }, 70)
+        }, 5000)
+}
 
     render() {
-        let closeDialogNotification = () => {
-            this.dialog.classList.remove('dialog-notification__shown');
+        const setChatClosed = () => {
+            const chat = document.getElementById('chat');
+
+            chat.classList.remove('appeared');
         };
 
         return (
-            <div className="dialog-notification" id="dialog">
-                <div className="dialog-notification__closer" onClick={closeDialogNotification}>x</div>
-                <div className="dialog-notification__img">
-                    <img src="/img/support.png" alt="support"/>
+            <div className="chat-notification" id="chat">
+                <div className="chat-notification__closer" onClick={setChatClosed}>x</div>
+                <div className="chat-notification__ring" id="ring1">
+                    <div className="chat-notification__ring" id="ring2">
+                        <div className="chat-notification__img" id="chat-img">
+                            <img src="/img/support.png" alt="chat-img"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
